@@ -13,4 +13,20 @@ For example, given the following URL example.com/product-p-8099-index.html, your
 
 const extractProductId = (url) => url.split("-p-")[1].split("-")[0];
 
-console.log(extractProductId("example.com/product-p-8099-index.html"));
+// console.log(extractProductId("example.com/product-p-8099-index.html"));
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/* Given a letter, return its position in the alphabet. */
+/* For example, given 'a', return 1, given 'y', return '25' */
+
+function getLetterPosition(letter) {
+  const alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
+  return alphabet.indexOf(letter.toLowerCase()) + 1;
+}
+// getLetterPosition("a"); //1
+// getLetterPosition("d"); //4 */
+
+// console.log(getLetterPosition("a"));
+// console.log(getLetterPosition("A"));
+// console.log(getLetterPosition("d"));
