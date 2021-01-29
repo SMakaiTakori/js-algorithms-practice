@@ -5,9 +5,12 @@ It is terminated with -
 Your function should return a string.
  
 For example, given the following URL example.com/product-p-8099-index.html, your function should return '8099', as it satisfies the above rules. Given example.com/products/gift-p-door801933-edit.html, your function should return 'door801933'. */
- 
+
 //split on -p- -> gives two arrays
 //split second array on dash, want first item of split
- 
-/* "Hello world!".split("-") // ["Hello", "world!"]
 
+/* "Hello world!".split("-") // ["Hello", "world!"]*/
+
+const extractProductId = (url) => url.split("-p-")[1].split("-")[0];
+
+console.log(extractProductId("example.com/product-p-8099-index.html"));
